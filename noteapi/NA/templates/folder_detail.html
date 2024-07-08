@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folder Detail</title>
+</head>
+<body>
+    <h1>{{ folders.name }}</h1>
+    <p>{{ folders.description }}</p>
+    <a href="{% url 'folder_update' folders.slug %}">Edit</a>
+    <a href="{% url 'folder_delete' folders.slug %}">Delete</a>
+    <a href="{% url 'folder_list' %}">Back to Folder List</a>
+</body>
+</html>

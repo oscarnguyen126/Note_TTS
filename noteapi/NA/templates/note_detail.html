@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note Detail</title>
+</head>
+<body>
+    <h1>{{ notes.title }}</h1>
+    <p>{{ notes.content }}</p>
+    <a href="{% url 'note_update' notes.slug %}">Edit</a>
+    <a href="{% url 'note_delete' notes.slug %}">Delete</a>
+    <a href="{% url 'note_list' %}">Back to Note List</a>
+</body>
+</html>
